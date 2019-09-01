@@ -6,22 +6,23 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Restaurant</title>
+        <title>LAMBDA Restaurant</title>
         <link rel="shortcut icon" href="./img/favicon.png">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
         <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/animate.css">
         <link rel="stylesheet" href="./css/style.min.css">
 
     </head>
 
     <body>
 
-        <header class="header " id="header">
+        <header class="header wow slideInDown" id="header">
             <div class="container-fluid">
                 <div class="container main-navbar">
                     <div class="row">
                         <div class="col">
-                            <nav class="navbar navbar-expand-lg  ">
+                            <nav class="navbar navbar-expand-lg">
                                 <a href="#section__one"><img src="./img/Logo.png" alt="Product-Logo" id="logo"></a>
                                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="burger(this)">
                                     <div class="menu__container">
@@ -66,14 +67,14 @@
         <div class="section__one" id="section__one">
             <div class="container text">
                 <div class="row">
-                    <div class="col">
-                        <p class="text-center center-title">The right ingredients <br> for the right food</p>
+                    <div class="col wow slideInUp">
+                        <p class="text-center center-title wow fadeInLeftBig ">The right ingredients <br> for the right food</p>
                         <div class="decoration_f d-flex justify-content-center">
                             <img src="./img/DecorationTop.png" alt="Decoration">
                         </div>
                         <div class="row d-flex justify-content-center">
-                            <div class="d-flex justify-content-center"><button class="center__btn_f">BOOK A TABLE</button> </div>
-                            <div class="d-flex justify-content-center"><button class="center__btn_s">SEE THE MENU</button> </div>
+                            <div class="d-flex justify-content-center"><button class="center__btn_f wow fadeInLeftBig">BOOK A TABLE</button> </div>
+                            <div class="d-flex justify-content-center"><button class="center__btn_s wow fadeInRightBig">SEE THE MENU</button> </div>
                         </div>
                     </div>
                 </div>
@@ -82,7 +83,7 @@
         <div class="section_two" id="section_two">
             <div class="container">
                 <div class="row">
-                    <div class="col sec_two__first">
+                    <div class="col sec_two__first wow fadeInLeftBig" data-wow-delay="0.4s">
                         <p class="text-center right-title">Just the right food</p>
                         <div class="decoration_s d-flex justify-content-center">
                             <img src="./img/Divider.png" alt="Decoration">
@@ -92,7 +93,7 @@
                             <img src="./img/cook.png" alt="Decoration">
                         </div>
                     </div>
-                    <div class="col sec_two__seccond">
+                    <div class="col sec_two__seccond wow fadeInRightBig" data-wow-delay="0.7s">
                         <div class="decoration_f d-flex justify-content-center">
                             <img src="./img/dish.png" alt="Decoration">
                         </div>
@@ -107,7 +108,7 @@
                         <div class="left-block">
                             <div class="row">
                                 <div class="col">
-                                    <div class="sec_three_block">
+                                    <div class="sec_three_block wow zoomIn" data-wow-offset="500">
                                         <p class="text-center sec_t_block_title">Fine ingredients</p>
                                         <div class="decoration_s d-flex justify-content-center">
                                             <img src="./img/decoration.png" alt="Decoration">
@@ -126,9 +127,9 @@
                 </div>
             </div>
         </div>
-        <div class="section_four" id="section_four">
+        <div class="section_four " id="section_four">
             <div class="container" id="media-cont">
-                <div class="row">
+                <div class="row wow pulse" data-wow-offset="200">
                     <div class="col-lg-6 sec_four_left_block">
                         <p class="text-center sec_four_lt">Appetisers</p>
                         <div class="decoration_sec_four_left_block d-flex justify-content-center">
@@ -261,7 +262,7 @@
         <div class="section_five" id="section_five">
             <div class="container">
                 <div class="row">
-                    <div class="col d-flex justify-content-center">
+                    <div class="col d-flex justify-content-center wow zoomIn" data-wow-offset="200">
                         <div class="center_block">
                             <p class="top_center_title text-center ">Guest Reviews</p>
                             <div class="decoration_s d-flex justify-content-center">
@@ -286,16 +287,16 @@
                     <div class="col-lg-6">
                         <div class="images">
                             <div class="row">
-                                <div class="col">
+                                <div class="col wow fadeInLeftBig" data-wow-offset="200">
                                     <img class="img-fluid" src="./img/image-2.png" alt="Mill">
                                 </div>
-                                <div class="col">
+                                <div class="col wow fadeInRightBig" data-wow-offset="200">
                                     <img class="img-fluid" src="./img/image.png" alt="Mill">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="1s" data-wow-duration="2s">
                         <p class="text-center sec_six_top_title">Just the right food</p>
                         <div class="decoration_sec_six_ d-flex justify-content-center">
                             <img src="./img/Divider.png" alt="Decoration">
@@ -324,7 +325,7 @@
                                     <div class="col d-flex justify-content-center">
                                         <label for="date">
                                             <p class="date_p">Date</p>
-                                            <input type="date" name="bday" min="1900-01-01" max="2015-12-31" class="form-control" id="date">
+                                            <input type="date" min="1900-01-01" max="2015-12-31" id="date">
                                         </label>
                                     </div>
                                     <div class="col text-center d-flex justify-content-center" id="alone_inp">
@@ -343,10 +344,9 @@
                 </div>
             </div>
         </div>
-
         <div class="fotter">
             <div class="container">
-                <div class="row text-center d-flex justify-content-center">
+                <div class="row text-center d-flex justify-content-center wow bounceInUp" data-wow-offset="150">
                     <div class="col-lg-4">
                         <p class="footer_top_title">About Us</p>
                         <div class="decoration_fotter d-flex justify-content-center">
@@ -392,16 +392,16 @@
                             </strong>
                             <ul class="social">
                                 <li class="social-items">
-                                    <a href="#!"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.facebook.com" target="blank"><i class="fab fa-facebook-f"></i></a>
                                 </li>
                                 <li class="social-items">
-                                    <a href="#!"><i class="fab fa-youtube"></i></a>
+                                    <a href="https://www.youtube.com" target="blank"><i class="fab fa-youtube"></i></a>
                                 </li>
                                 <li class="social-items">
-                                    <a href="#!"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://twitter.com" target="blank"><i class="fab fa-twitter"></i></a>
                                 </li>
                                 <li class="social-items">
-                                    <a href="#!"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.instagram.com" target="blank"><i class="fab fa-instagram"></i></a>
                                 </li>
                             </ul>
                         </p>
@@ -412,6 +412,7 @@
 
         <script src="./js/jquery-3.4.1.min.js"></script>
         <script src="./bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="./js/wow.min.js"></script>
         <script src="./js/main-jquery.js"></script>
         <script src="./js/index.js"></script>
 
